@@ -64,7 +64,7 @@ ul.gnb > li > a {
 /* landing */
 
 .landing {
-    height: 100vh;
+    height: 600px;
     background-image: url("background.png");
     background-size: cover;
      display: flex;

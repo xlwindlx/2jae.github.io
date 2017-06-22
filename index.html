@@ -4,6 +4,17 @@
         <meta charset="UTF-8">
         <title>bokcerton</title>
         <link rel="stylesheet" href="likelion.css" type="text/css">
+       <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+        <script type="text/javascript">
+            function clickHandler(e){
+                alert('thank you');
+            }
+            $(document).bind('ready', function(){
+                 $('#click_me').bind('click', clickHandler);
+                
+             })
+        </script>
+</script>
         
     </head>
     
@@ -15,8 +26,8 @@
                 <h2 class="readable-hidden">Menu</h2>
                 <ul class="gnb">
                     <li><a href="#home">Home</a></li>
-                    <li><a href="#menber">Menber</a></li>
-                    <li><a href="#when">When</a></li>
+                    <li><a href="#menber" >Menber</a></li>
+                    <li><a href="#when" >When</a></li>
                 </ul>
             </nav>
         </header>
@@ -28,7 +39,7 @@
             <p class="landing-para">Stop giving up. You can do it. Do it! With us 
        for sure. And our awesome team. We will help you achieve only high goals in a super cool way.
             </p>
-            <a class="btn-landing" role="button" href="http://uni.likelion.org"> homepage</a>
+            <a class="btn-landing" role="button"  id="click_me" type="button" value="click me"> jquery</a>
         </section>
        
     <div class="container">
@@ -36,7 +47,7 @@
                 <h2 class="readable-hidden">blog</h2>
                 <article>
                      <img src="1.jpeg">
-                    <p>팀원설명</p>
+                    <p id="click1">팀원설명</p>
                 </article>
                 <article>
                       <img src="2.jpeg">
@@ -48,7 +59,7 @@
                 </article>
             </section>
         </div>
-        <footer class="footer" id="when">
+        <footer class="footer">
             <p>2017-7-2 천안권 복커톤</p>
         </footer>
     </body>
